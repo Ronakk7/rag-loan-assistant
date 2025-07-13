@@ -29,6 +29,48 @@ It includes structured fields like:
 ## 🚀 Quickstart
 
 ### ✅ Clone the Repository
-```bash
+
+
 git clone https://github.com/your-username/loan-rag-chatbot.git
 cd loan-rag-chatbot
+
+✅ Install Dependencies
+pip install -r requirements.txt
+
+✅ Add Dataset
+loan_rag_chatbot/
+├── loan_data/
+│   ├── Training Dataset.csv
+│   ├── Test Dataset.csv
+│   └── Sample_Submission.csv
+
+💡 Usage
+Run the chatbot:
+python app.py
+🤖 Loan Chatbot is ready! Ask any question about the loan dataset.
+You: How many dependents does LP001003 have?
+Bot: 3+
+
+You: What is the income of the applicant with Loan ID LP001005?
+Bot: 6000
+
+🧠 Tech Stack
+Component	Tech Used
+Embedding Model	sentence-transformers/all-MiniLM-L6-v2
+Vector Search Engine	FAISS
+Generative LLM	google/flan-t5-base (Hugging Face)
+Programming Language	Python
+
+🔍 Example Questions to Try
+What is the loan amount of LP001178?
+
+How many dependents does LP002837 have?
+
+Is LP001003 a self-employed applicant?
+
+What is the loan status of LP001100?
+
+🧑‍💻 Author
+Built with ❤️ by Ronak.
+Feel free to fork, modify, or use this for learning and projects!
+
